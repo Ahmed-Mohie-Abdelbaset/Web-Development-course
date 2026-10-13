@@ -1,0 +1,94 @@
+/* Dark/gray background matching the theme style */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+/* Main card container (rounded rectangle style) */
+.container {
+    background: #1e1e1e;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    width: 340px;
+}
+
+/* Title text */
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Wrapper for spacing */
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* Rounded text input box */
+input {
+    padding: 10px 14px;
+    border: 1px solid #444;
+    background-color: #2a2a2a;
+    color: #ffffff;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    width: 160px;
+    margin-right: 6px;
+    transition: border-color 0.2s;
+}
+
+    input::placeholder {
+        color: #888;
+    }
+
+    input:focus {
+        border-color: #ffffff;
+    }
+
+/* Greet button: dark theme with scale and gray hover effect */
+button {
+    padding: 10px 16px;
+    background-color: #333333;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+    /* Hover effect: enlarge by 0.2 (scale to 1.2) and turn gray */
+    button:hover {
+        transform: scale(1.2);
+        background-color: #6c757d;
+    }
+
+/* List styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+    /* Name items displayed with a soft dark gray background effect */
+    ul li {
+        background-color: #2a2a2a;
+        padding: 12px;
+        margin-bottom: 8px;
+        border-radius: 8px;
+        color: #ffffff;
+        font-weight: 500;
+        cursor: pointer;
+        transition: background-color 0.2s;
+    }
+
+        ul li:hover {
+            background-color: #383838;
+        }
