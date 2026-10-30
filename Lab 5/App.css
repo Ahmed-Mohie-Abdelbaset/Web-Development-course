@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #121212;
+    color: #f1f1f1;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.todo-card {
+    background-color: #1e1e1e;
+    width: 100%;
+    max-width: 600px;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid #333;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+input[type="text"],
+textarea,
+select {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: #fff;
+    padding: 12px 15px;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+    input[type="text"]:focus,
+    textarea:focus,
+    select:focus {
+        border-color: #00adb5;
+        box-shadow: 0 0 8px rgba(0, 173, 181, 0.4);
+    }
+
+.input-group input[type="text"] {
+    flex: 1;
+}
+
+button {
+    background-color: #00adb5;
+    color: #ffffff;
+    font-weight: bold;
+    border: 2px solid transparent;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+    button:hover {
+        background-color: #393e46;
+        color: #00adb5;
+        border-color: #00adb5;
+        transform: translateY(-2px);
+    }
+
+.movie-list {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.movie-item {
+    background-color: #252525;
+    border: 1px solid #383838;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+    .movie-item:hover {
+        border-color: #555;
+    }
+
+.movie-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 18px;
+}
+
+.movie-title-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.movie-title {
+    font-size: 1.1rem;
+    color: #eee;
+}
+
+    .movie-title.watched {
+        text-decoration: line-through;
+        color: #888;
+    }
+
+.star-display {
+    margin-left: 8px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.arrow-btn {
+    background: transparent;
+    border: 1px solid #444;
+    color: #00adb5;
+    padding: 5px 10px;
+}
+
+    .arrow-btn:hover {
+        background-color: #222;
+        border-color: #ff2e63;
+        color: #ff2e63;
+    }
+
+.delete-btn {
+    background-color: #ff2e63;
+    border: 2px solid transparent;
+}
+
+    .delete-btn:hover {
+        background-color: #222;
+        color: #ff2e63;
+        border-color: #ff2e63;
+    }
+
+.submenu {
+    background-color: #1a1a1a;
+    border-top: 1px solid #333;
+    padding: 15px 18px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.submenu-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+    .submenu-row label {
+        font-weight: 600;
+        color: #aaaaaa;
+        min-width: 120px;
+    }
+
+.comment-box {
+    flex: 1;
+    display: flex;
+    gap: 10px;
+}
+
+    .comment-box input {
+        flex: 1;
+    }
+
+.saved-comment {
+    font-style: italic;
+    color: #22d3ee;
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
